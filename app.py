@@ -15,6 +15,7 @@ class MyFrame(wx.Frame):
 # 本体
 def clipper():
     clip = pc.waitForNewPaste()
+    print(clip)
     modified = clip.replace("\r\n", "").replace("\n", "")
     pc.copy(modified)
     print(modified)
